@@ -3,6 +3,17 @@
   "homepage": "http://react-boilerplate.mcnam.ee/",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "web": "webpack-dev-server --content-base build/ --config webpack/web.dev.config.js --mode development --port 3001 --inline --hot --colors --historyApiFallback",
+    "web-bundle": "webpack --config webpack/web.prod.config.js --progress --colors --mode production",
+    "clear-cache": "gulp clear-cache",
+    "debug": "open 'rndebugger://set-debugger-loc?host=localhost&port=19001'"
+  },
   "devDependencies": {
     "autoprefixer": "^8.3.0",
     "babel-core": "^6.26.0",
@@ -33,17 +44,6 @@
     "webpack-hot-middleware": "^2.22.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
-  "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch",
-    "web": "webpack-dev-server --content-base build/ --config webpack/web.dev.config.js --mode development --port 3001 --inline --hot --colors --historyApiFallback",
-    "web-bundle": "webpack --config webpack/web.prod.config.js --progress --colors --mode production",
-    "clear-cache": "gulp clear-cache",
-    "debug": "open 'rndebugger://set-debugger-loc?host=localhost&port=19001'"
-  },
   "jest": {
     "preset": "jest-expo"
   },
