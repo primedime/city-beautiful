@@ -1,8 +1,8 @@
 export default {
-  apiKey: 'AIzaSyAHshJehJ-E_9AoUN3kfY8BLvZtFoXxFto',
-  authDomain: 'react-native-starter-app.firebaseapp.com',
-  databaseURL: 'https://react-native-starter-app.firebaseio.com',
-  projectId: 'react-native-starter-app',
-  storageBucket: 'react-native-starter-app.appspot.com',
-  messagingSenderId: '762822550667',
+  apiKey: 'AIzaSyCgrnHXf1-lYlDymn27c1FHA32lL0bdPOw',
+  authDomain: 'city-beautify-1532128537146.firebaseapp.com',
+  databaseURL: 'https://city-beautify-1532128537146.firebaseio.com',
+  projectId: 'city-beautify-1532128537146',
+  storageBucket: 'city-beautify-1532128537146.appspot.com',
+  messagingSenderId: '977420330850',
 };
