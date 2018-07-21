@@ -1,12 +1,15 @@
 import React from 'react';
-import { Container, Content, Button, Text, ListItem, Body, CheckBox, Textarea, Formgit } from 'native-base';
+import { Container, Content, Button, Text, ListItem, Body, CheckBox, Textarea, Form, Item, Label } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 const CreateReportComponent = (props) => (
     <Container>
         <Content>
             <Form>
-                <Textarea rowSpan={5} bordered placeholder="Description" />
+                <Item floatingLabel>
+                    <Label>Description</Label>
+                </Item>
+                <Textarea rowSpan={5} bordered placeholder="...enter a brief description" />
                 <ListItem>
                     <CheckBox checked={props.submitAnonymously} />
                     <Body>
