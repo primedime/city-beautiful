@@ -1,11 +1,16 @@
 import React from 'react';
-import { Container, Content, Button, Text, ListItem, Body, CheckBox, Textarea, Form, Item, Label } from 'native-base';
+import { Container, Content, Button, Text, ListItem, Body, Input, CheckBox, Textarea, Form, Item, Label } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 const CreateReportComponent = (props) => (
     <Container>
         <Content padder>
             <Form>
+
+                <Item floatingLabel>
+                    <Label>Title</Label>
+                    <Input />
+                </Item>
                 <Item floatingLabel>
                     <Label>Description</Label>
                 </Item>

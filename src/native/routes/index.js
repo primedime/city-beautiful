@@ -52,14 +52,6 @@ const Index = (
         </Stack>
 
         <Stack
-          key="startReport"
-          title="Create Report"
-          icon={() => <Icon type="FontAwesome" name="book-open" />}
-        >
-          <Scene key="startReport" component={StartReportComponent} />
-        </Stack>
-
-        <Stack
           key="recipes"
           title="RECIPES"
           icon={() => <Icon name="book" {...DefaultProps.icons} />}
