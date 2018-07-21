@@ -29,6 +29,9 @@ import ProfileComponent from '../components/Profile';
 
 import AboutComponent from '../components/About';
 
+import CreateReportComponent from '../components/CreateReport';
+import StartReportComponent from '../components/StartReport';
+
 const Index = (
   <Stack>
     <Scene hideNavBar>
@@ -46,6 +49,14 @@ const Index = (
           {...DefaultProps.navbarProps}
         >
           <Scene key="home" component={AboutComponent} />
+        </Stack>
+
+        <Stack
+          key="startReport"
+          title="Create Report"
+          icon={() => <Icon type="FontAwesome" name="book-open" />}
+        >
+          <Scene key="startReport" component={StartReportComponent} />
         </Stack>
 
         <Stack
@@ -107,6 +118,14 @@ const Index = (
         </Stack>
       </Tabs>
     </Scene>
+
+    <Scene
+      back
+      key="createReport"
+      title="Create Report"
+      {...DefaultProps.navbarProps}
+      component={CreateReportComponent}
+    />
 
     <Scene
       back
