@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 
 const CreateReportComponent = (props) => (
     <Container>
-        <Content>
+        <Content padder>
             <Form>
                 <Item floatingLabel>
                     <Label>Description</Label>
