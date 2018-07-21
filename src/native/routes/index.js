@@ -113,6 +113,14 @@ const Index = (
 
     <Scene
       back
+      key="startReport"
+      title="Start Report"
+      {...DefaultProps.navbarProps}
+      component={StartReportComponent}
+    />
+
+     <Scene
+      back
       key="createReport"
       title="Create Report"
       {...DefaultProps.navbarProps}
